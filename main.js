@@ -17,7 +17,7 @@ function showNextText() {
         console.log(currentIndex)    
     } 
     else {
-        window.location.assign('profile')
+        window.location.assign('profile/index.html')
     }
 
 
