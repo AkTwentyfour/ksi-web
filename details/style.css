@@ -1,0 +1,576 @@
+:root {
+    --background: #121212;
+    --secondary: #1b1b1b;
+    --first-color: #bb86fc;
+    --second-color: #ffff;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+.card {
+  background-color: #1b1b1b;
+  color: #ffff;
+}
+
+.highlight {
+    color: var(--first-color) !important;
+}
+
+.highlight-blue {
+    color: #30c2fd;
+}
+
+/* animation fade-in-X */
+.load-animate-xl {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+.load-animate-xr {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+.animated-x {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 0.9s;
+}
+
+
+/* animation fade-in-Y */
+.load-animate {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+.scroll-animate {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+
+
+/* when scrolled or refreshed */
+.animated {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.9s;
+}
+
+
+/* animation delay */
+.animate-1 {
+    transition-delay: 0s;
+}
+.animate-2 {
+    transition-delay: 0.2s;
+}
+.animate-3 {
+    transition-delay: 0.5s;
+}
+.animate-4 {
+    transition-delay: 0.7s;
+}
+.animate-5 {
+    transition-delay: 0.9s;
+}
+.animate-6 {
+    transition-delay: 1.1s;
+}
+.animate-7 {
+    transition-delay: 1.3s;
+}
+
+/* header ( pwmbungkus navbar dan sosmed ) */
+.navigation-bar {
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+.background-navbar::before,
+.background-navbar::after {
+  position: absolute;
+  z-index: -5;
+}
+
+.background-navbar::before {
+  content: "";
+  height: 0px;
+  width: 35%;
+  border-bottom: solid 79px #1b1b1b;
+  border-right: solid 35px transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.background-navbar::after {
+  content: "";
+  height: 0px;
+  width: 66%;
+  border-top: solid 45px #1b1b1b;
+  border-left: solid 20px transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.deskripsi-brand-1 {
+  display: block;
+  font-size: 11px;
+}
+
+.deskripsi-brand-2 {
+  display: none;
+}
+
+.sosmed {
+  background-color: #2a2a2a;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand {
+  top: 9px;
+}
+
+/* navbar */
+.navbar {
+  z-index: 10;
+  float: right;
+}
+
+.nav-link {
+  color: #ffff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: gray !important;
+}
+
+.nav-active {
+  font-weight: bold;
+  border-bottom: 3px solid #bb86fc;
+  width: min-content;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(/aset/menu.png);
+}
+
+
+/* header */
+@media (max-width: 768px) {
+    .row-header {
+        height: 100% !important;
+        margin-top: 20px;
+    }
+    .img-header {
+        height: 100%;
+        width: 100%;
+    }
+}
+.row-header {
+    height: 55vh;
+    margin-top: 70px;
+}
+.img-header {
+    height: 500px;
+}
+.card {
+    border-radius: 15px !important;
+}
+
+
+/* content-2 */
+.accordion-button::after {
+  background-image: url(aset/down-arrow.png);
+}
+.accordion-item,
+.accordion-button {
+  background-color: #1b1b1b !important;
+  color: #fff;
+}
+.card-collapse {
+  width: 100%;
+  height: max-content;
+}
+
+.card-content-2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-content-2:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.pemasaran {
+  background-color: #fff;
+  padding: 15px;
+  width: 495px;
+}
+
+.pemasaran:hover {
+  background-color: #161a4f;
+  color: white;
+}
+
+.dropdown .none1::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  content: url(/aset/arrow-removebg-preview.png);
+  border: 0;
+}
+
+.dropend .none2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.dropend .none2:hover {
+  background-color: #161a4f;
+  color: white;
+}
+
+.dropend .none2::after {
+  display: none;
+}
+
+.tampilan-laptop {
+  display: block;
+}
+
+.tampilan-handphone {
+  display: none;
+}
+
+/* content 3 */
+
+.profile .card-body {
+  text-align: center;
+}
+
+.profile-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-image: url(aset/barber-1.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 8px 2px #ffff;
+  margin: 0 auto;
+}
+
+.big-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #bb86fc;
+}
+
+.barber-nickname {
+  color: #fff;
+  background-color: #bb86fc;
+  font-weight: bold;
+}
+.barber-nickname:hover {
+  background-color: #a860ff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* footer */
+.nav-item-wrap {
+  margin-top: 35px;
+}
+
+.footer-link-hover .nav-link {
+  width: max-content;
+}
+
+.footer-link-hover a {
+  color: #beb4b4 !important;
+}
+
+.footer-link-hover a:hover {
+  color: rgb(199, 195, 195);
+}
+
+.link-wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  color: #bb86fc;
+}
+
+.link {
+  position: absolute;
+  left: 60px;
+}
+
+.wrap-sosmed {
+  background-color: #bb86fc;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp,
+.instagram,
+.facebook,
+.youtube,
+.gmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp::after,
+.instagram::before,
+.facebook::after,
+.youtube::after,
+.gmail::after {
+  content: "";
+  transition: 0.4s ease-out;
+  border-radius: 10px;
+  color: rgb(1, 1, 37);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.whatsapp:hover:after,
+.instagram:hover::before,
+.facebook:hover:after,
+.gmail:hover:after,
+.youtube:hover:after {
+  content: "";
+  width: max-content;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #bb86fc;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.whatsapp:hover::after {
+  content: "Whatsapp";
+}
+
+.instagram:hover::before {
+  content: "Instagram";
+}
+
+.facebook:hover::after {
+  content: "Facebook";
+}
+
+.youtube:hover::after {
+  content: "Youtube";
+}
+
+.gmail:hover::after {
+  content: "Gmail";
+}
+
+@media (max-width: 768px) {
+  /* header responsive */
+  .background-navbar::before {
+    width: 45%;
+  }
+
+  .background-navbar::after {
+    width: 55%;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .brand {
+    font-size: 15px;
+    position: absolute;
+    top: 15px;
+  }
+
+  .deskripsi-brand-1 {
+    display: none;
+    font-size: 10px;
+  }
+
+  .deskripsi-brand-2 {
+    display: block;
+    font-size: 10px;
+  }
+
+  .location-wrapper marquee,
+  .location-wrapper img {
+    display: none;
+  }
+
+  .location-sosmed-navbar {
+    width: 100%;
+  }
+
+  .navigation-bar {
+    padding-bottom: 20px;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .navbar-wrap {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+  }
+
+  /* carousel */
+  .carousel-inner {
+    height: auto;
+  }
+
+  .absolute-carousel-text {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+  }
+
+  .first-text-carousel {
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 30px;
+  }
+
+  .second-text-carousel {
+    font-size: 15px;
+  }
+
+  .button-carousel {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  /* content 2 */
+  .card-collapse {
+    height: max-content;
+  }
+
+  /* footer */
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  /* header responsive */
+  .change-mt {
+    margin-top: 10px;
+  }
+
+  .background-navbar::before {
+    width: 50%;
+  }
+
+  .background-navbar::after {
+    width: 49%;
+  }
+
+  .brand {
+    top: 15px;
+  }
+
+  .brand img {
+    height: 20px;
+  }
+
+  .nama-brand {
+    font-size: 15px !important;
+  }
+
+  .deskripsi-brand {
+    font-size: 10px;
+  }
+
+  .sosmed-wrapper img {
+    height: 15px;
+  }
+
+  .sosmed {
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .navigation-bar {
+    padding-bottom: 20px;
+  }
+
+  /* carousel */
+  .absolute-carousel-text {
+    top: 45px;
+    left: 50px;
+  }
+
+  .first-text-carousel {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+
+  .second-text-carousel {
+    font-size: 10px;
+    max-width: 220px;
+  }
+
+  .button-carousel {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .small-text {
+    font-size: 15px;
+  }
+
+  .smaller-text {
+    font-size: 15px;
+  }
+
+  /* content 2 */
+  .tampilan-laptop {
+    display: none;
+  }
+  .tampilan-handphone {
+    display: block;
+  }
+}

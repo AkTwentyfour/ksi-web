@@ -1,0 +1,113 @@
+:root {
+    --background: #121212;
+    --secondary: #1b1b1b;
+    --first-color: #bb86fc;
+    --second-color: #ffff;
+}
+
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background) !important;
+}
+
+.big-text {
+    font-size: 8rem;
+}
+.small-text {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.container-stripped {
+    border-top: 5px solid var(--first-color);
+    border-bottom: 5px solid var(--first-color);
+    transition: 1s ease-in-out;
+}
+
+.text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.text-item {
+    position: absolute;
+    transition: 2s ease;
+    transform:  translateY(30px);
+    opacity: 0;
+    color: var(--first-color);
+    text-align: center;
+}
+
+.animation-start {
+    opacity: 1;
+    transform:  translate(0px);
+    transition: 2s ease;
+}
+
+.box {
+    font-size: 6rem;
+    font-style: italic;
+}
+
+.img-profile {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid var(--first-color);
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-1 {
+    background-image: url(/assets/biar-keren\(square\).jpg);
+}
+.profile-2 {
+    background-image: url(/assets/ilham.jpg);
+}
+.profile-3 {
+    background-image: url(/assets/dimas.jpg);
+}
+
+.desc-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .big-text {
+        font-size: 2rem;
+    }
+    .small-text {
+        font-size: 1rem;
+    }
+    .box {
+        font-size: 2rem;
+    }
+    .img-profile {
+        height: 100px;
+        width: 100px;
+        border: 2px solid var(--first-color);
+    }
+    .desc-profile {
+        padding: 10px;
+    }
+}

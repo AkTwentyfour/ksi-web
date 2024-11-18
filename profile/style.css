@@ -1,0 +1,107 @@
+:root {
+  --background: #121212;
+  --secondary: #1b1b1b;
+  --first-color: #bb86fc;
+  --second-color: #ffff;
+}
+
+body {
+  font-family: "poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #1b1b1b !important;
+  color: #ffff !important;
+  border-radius: 15px !important;
+  transition: 0.3s ease;
+  transform: scale(0.9, 0.9);
+}
+.active {
+  box-shadow: 8px 8px 0px 0px var(--first-color);
+  transition: 0.3s ease;
+  cursor: pointer;
+  transform: scale(1, 1);
+  background-color: #212121 !important;
+}
+.card:hover {
+  box-shadow: 8px 8px 0px 0px var(--first-color);
+  transition: 0.3s ease;
+  cursor: pointer;
+  transform: scale(1, 1);
+  background-color: #212121 !important;
+}
+.card:hover .profile-image {
+  /* box-shadow: 0px 0px 0px 3px var(--first-color); */
+  border: 3px solid var(--first-color);
+  transition: 0.3s;
+}
+.card:hover h4 {
+  color: var(--first-color);
+  transition: 0.3s;
+}
+.card:hover .barber-nickname {
+  background-color: #a860ff !important;
+  transition: 0.3s;
+}
+
+.card h4 {
+  transition: 0.3s;
+}
+
+.profile .card-body {
+  text-align: center;
+  /* padding: 50px !important; */
+}
+
+.profile-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s;
+  /* box-shadow: 0px 0px 8px 2px var(--second-color); */
+  border: 3px solid var(--second-color);
+  margin: 0 auto;
+}
+
+.big-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #bb86fc;
+}
+
+.barber-nickname {
+  color: #fff !important;
+  background-color: #bb86fc !important;
+  font-weight: bold;
+}
+
+/* animation */
+.animate {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.animated {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+}
+
+.animate-1 {
+  transition-delay: 0s;
+}
+.animate-2 {
+  transition-delay: 0.3s;
+}
+.animate-3 {
+  transition-delay: 0.6s;
+}
